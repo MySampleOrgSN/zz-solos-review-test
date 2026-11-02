@@ -11,3 +11,9 @@ function clamp(value, min, max) {
 }
 
 module.exports = { add, clamp };
+
+function average(values) {
+    return values.reduce(add, 0) / values.length;
+}
+
+module.exports.average = average;
