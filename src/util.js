@@ -11,3 +11,9 @@ function clamp(value, min, max) {
 }
 
 module.exports = { add, clamp };
+
+function largest(values) {
+    return Math.max(...values);
+}
+
+module.exports.largest = largest;
